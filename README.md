@@ -94,7 +94,10 @@ python main.py
 <img width="1510" height="473" alt="200" src="https://github.com/user-attachments/assets/c89556d9-9524-4fdd-9e2f-edf822e4d08f" />
 
 
+<img width="1516" height="553" alt="201" src="https://github.com/user-attachments/assets/edfc933f-f5fd-4bbb-9343-9d457390e725" />
 
+
+<img width="1508" height="527" alt="202" src="https://github.com/user-attachments/assets/911cc2a2-bf54-4697-8a45-c82c7245979d" />
 
 # MCP-Style Tools
 
