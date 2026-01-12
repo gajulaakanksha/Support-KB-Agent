@@ -113,16 +113,20 @@ These tools are injected into the LangGraph flow, simulating how MCP provides to
 
 The reasoning flow is explicitly modeled using LangGraph:
 
-Retrieve Node
+1. Retrieve Node: 
 Fetch relevant documents from FAISS
 
-Draft Answer Node
+2. Draft Answer Node: 
 Generate an answer using retrieved context
 
-Cite Sources Node
+3. Cite Sources Node: 
 Attach document references
 
-Final Node
+4. Final Node: 
 Produce the final grounded response
 
 This makes the agent deterministic, debuggable, and extensible.
+
+# Conclusion
+
+This project demonstrates a minimal end-to-end RAG-based Support KB Agent using Hugging Face models, LangGraph, and MCP-style tools. It showcases how document retrieval, agent orchestration, and grounded answer generation can be combined into a clean, modular GenAI system suitable for real-world support use cases.
