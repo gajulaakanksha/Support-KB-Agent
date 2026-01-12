@@ -130,6 +130,33 @@ Produce the final grounded response
 
 This makes the agent deterministic, debuggable, and extensible.
 
+# Chunking Strategy
+
+Chunk size: 500 tokens
+Overlap: 50 tokens
+This balance preserves semantic meaning while ensuring relevant information is not split across chunks, improving retrieval accuracy.
+
+# Embedding & Retriever
+
+Embedding model: "BAAI/bge-base-en-v1.5" (Hugging Face)
+Chosen for its strong semantic search performance and ability to run locally without API keys.
+Vector store: FAISS
+Provides fast, efficient similarity search for small-to-medium document collections.
+
+# Prompt Design
+
+Prompts explicitly instruct the model to answer only using retrieved context.
+Context and question are clearly separated to reduce hallucinations.
+
+# Evaluation Approach
+
+Manual evaluation using sample support questions.
+Checked for:
+Answer correctness
+Faithfulness to retrieved documents
+Proper source citation
+This approach is sufficient for a small demo and aligns with real-world prototyping workflows.
+
 # Conclusion
 
 This project demonstrates a minimal end-to-end RAG-based Support KB Agent using Hugging Face models, LangGraph, and MCP-style tools. It showcases how document retrieval, agent orchestration, and grounded answer generation can be combined into a clean, modular GenAI system suitable for real-world support use cases.
